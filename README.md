@@ -1,18 +1,28 @@
-# CrazyMobileApp
+# Crazy Mobile App (KMP)
 
-Kotlin Multiplatform (KMP) starter project for an emergency alert app. The goal is to let users trigger a loud alarm with flashing flashlight and emergency calls by pressing volume up + down (or another selected trigger). Users can configure a custom emergency contact in addition to the police number.
+This repository scaffolds a Kotlin Multiplatform (KMP) project for an emergency alert workflow. The goal is to build a mobile app that can be triggered by pressing volume up + down simultaneously (or another activation option), then:
 
-## Planned feature set
-- Trigger options: volume up + down, alternative gestures, and customizable triggers.
-- Emergency flow: loud siren (police-like audio), flashlight strobe, and automatic calls.
-- Settings: user-defined emergency number plus police number (default 911).
-- Status tracking: persistent foreground service and in-app status.
+- Play a loud police-style siren.
+- Flash the device flashlight.
+- Call the police and a user-defined emergency contact.
 
-## Modules
-- `shared`: KMP shared models and interfaces.
-- `androidApp`: Android application placeholder.
+## Planned features
+
+- **Activation modes**: volume buttons, custom gesture, or in-app trigger button.
+- **Emergency contacts**: selectable police number and an additional emergency contact.
+- **Alert feedback**: flashing flashlight and a siren message that mimics a police arrival announcement.
+
+## Project structure
+
+- `shared/`: Kotlin Multiplatform shared logic and data models.
+- `androidApp/`: Android application module (initial UI shell).
 
 ## Next steps
-- Add UI for settings and trigger selection.
-- Implement the Android foreground service for siren/flashlight/call flows.
-- Add iOS target and platform-specific implementations.
+
+1. Implement platform-specific integrations for:
+   - Volume button detection on Android/iOS.
+   - Flashlight access.
+   - Phone call initiation.
+   - Audio playback for the siren/announcement.
+2. Add settings screens to allow users to set emergency numbers.
+3. Expand the shared module with state management and feature workflows.

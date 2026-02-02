@@ -1,3 +1,3 @@
 rootProject.name = "crazymobileapp"
-
-include(":shared", ":androidApp")
+include(":shared")
+include(":androidApp")
