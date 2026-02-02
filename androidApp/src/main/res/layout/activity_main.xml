@@ -1,22 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:background="@android:color/white">
 
-    <TextView
-        android:id="@+id/introTitle"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Emergency Trigger"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <TextView
-        android:id="@+id/introDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Configure the activation mode and emergency contacts in the next screens."
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opening_title"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/opening_subtitle"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/emergency_number_label"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+        <Spinner
+            android:id="@+id/emergency_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/custom_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/custom_number_hint"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/save_button" />
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/call_button" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/status_idle"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+    </LinearLayout>
+</ScrollView>
