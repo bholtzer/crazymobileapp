@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.CrazyMobileApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#D32F2F</item>
+        <item name="colorPrimaryVariant">#9A0007</item>
+        <item name="colorSecondary">#FF8A80</item>
+    </style>
+</resources>

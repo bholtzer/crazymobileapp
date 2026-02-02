@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Crazy Mobile App</string>
+    <string name="opening_title">Emergency Setup</string>
+    <string name="opening_subtitle">Select the number to call and where to send your current location when the app launches.</string>
+    <string name="emergency_number_label">Emergency number</string>
+    <string name="custom_number_hint">Custom number</string>
+    <string name="save_button">Save emergency number</string>
+    <string name="call_button">Call emergency number</string>
+    <string name="status_idle">Waiting for setup.</string>
+    <string name="enter_number_prompt">Please enter or select an emergency number.</string>
+    <string name="saved_message">Emergency number saved.</string>
+    <string name="permissions_required">Location and SMS permissions are required to send your location.</string>
+    <string name="no_number_status">Choose an emergency number to send your location.</string>
+    <string name="fetching_location">Fetching current location…</string>
+    <string name="location_unavailable">Unable to fetch your current location.</string>
+    <string name="location_message_template">Emergency alert: current location %1$s</string>
+    <string name="location_sent">Location sent to %1$s.</string>
+
+    <string-array name="emergency_numbers">
+        <item>911</item>
+        <item>112</item>
+        <item>999</item>
+        <item>Custom</item>
+    </string-array>
+</resources>
